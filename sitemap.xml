@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/helloword/</loc>
+    <loc>https://fuhangyl.github.io/helloword/</loc>
     
     <lastmod>2024-02-01</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/projects/index.html</loc>
+    <loc>https://fuhangyl.github.io/projects/index.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/index.html</loc>
+    <loc>https://fuhangyl.github.io/tags/index.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/sketch/index.html</loc>
+    <loc>https://fuhangyl.github.io/sketch/index.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/links/index.html</loc>
+    <loc>https://fuhangyl.github.io/links/index.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/categories/index.html</loc>
+    <loc>https://fuhangyl.github.io/categories/index.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/about/index.html</loc>
+    <loc>https://fuhangyl.github.io/about/index.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/flex.html</loc>
+    <loc>https://fuhangyl.github.io/flex.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/404.html</loc>
+    <loc>https://fuhangyl.github.io/404.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -84,7 +84,7 @@
   
 
   <url>
-    <loc>https://github.com/fuhangyl/blog</loc>
+    <loc>https://fuhangyl.github.io/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -92,168 +92,168 @@
 
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/vue/</loc>
+    <loc>https://fuhangyl.github.io/tags/vue/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/vuex/</loc>
+    <loc>https://fuhangyl.github.io/tags/vuex/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/vue-route/</loc>
+    <loc>https://fuhangyl.github.io/tags/vue-route/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/elemelt-ui/</loc>
+    <loc>https://fuhangyl.github.io/tags/elemelt-ui/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://fuhangyl.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/AST/</loc>
+    <loc>https://fuhangyl.github.io/tags/AST/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/JavaScript/</loc>
+    <loc>https://fuhangyl.github.io/tags/JavaScript/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/devenv/</loc>
+    <loc>https://fuhangyl.github.io/tags/devenv/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>https://fuhangyl.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/node/</loc>
+    <loc>https://fuhangyl.github.io/tags/node/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/css/</loc>
+    <loc>https://fuhangyl.github.io/tags/css/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/Flutter/</loc>
+    <loc>https://fuhangyl.github.io/tags/Flutter/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/electron/</loc>
+    <loc>https://fuhangyl.github.io/tags/electron/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/git/</loc>
+    <loc>https://fuhangyl.github.io/tags/git/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/github/</loc>
+    <loc>https://fuhangyl.github.io/tags/github/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/hello-world/</loc>
+    <loc>https://fuhangyl.github.io/tags/hello-world/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/hexo/</loc>
+    <loc>https://fuhangyl.github.io/tags/hexo/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/MongoDB/</loc>
+    <loc>https://fuhangyl.github.io/tags/MongoDB/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/npm/</loc>
+    <loc>https://fuhangyl.github.io/tags/npm/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/Pjax/</loc>
+    <loc>https://fuhangyl.github.io/tags/Pjax/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/video/</loc>
+    <loc>https://fuhangyl.github.io/tags/video/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/vscode/</loc>
+    <loc>https://fuhangyl.github.io/tags/vscode/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/WebComponents/</loc>
+    <loc>https://fuhangyl.github.io/tags/WebComponents/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/tags/webpack/</loc>
+    <loc>https://fuhangyl.github.io/tags/webpack/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -262,35 +262,35 @@
 
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/categories/%E5%88%9B%E4%BD%9C%E7%B1%BB/</loc>
+    <loc>https://fuhangyl.github.io/categories/%E5%88%9B%E4%BD%9C%E7%B1%BB/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/categories/%E8%AE%B0%E5%BD%95%E7%B1%BB/</loc>
+    <loc>https://fuhangyl.github.io/categories/%E8%AE%B0%E5%BD%95%E7%B1%BB/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/categories/%E5%88%9B%E9%80%A0%E7%B1%BB/</loc>
+    <loc>https://fuhangyl.github.io/categories/%E5%88%9B%E9%80%A0%E7%B1%BB/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/categories/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://fuhangyl.github.io/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/fuhangyl/blog/categories/%E5%88%86%E4%BA%AB%E7%B1%BB/</loc>
+    <loc>https://fuhangyl.github.io/categories/%E5%88%86%E4%BA%AB%E7%B1%BB/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
