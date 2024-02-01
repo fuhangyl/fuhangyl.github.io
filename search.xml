@@ -12,4 +12,9 @@
         <tag>hello world</tag>
       </tags>
   </entry>
+  <entry>
+    <title>parseint-map</title>
+    <url>/parseint-map/</url>
+    <content><![CDATA[<h1 id="‘1’-‘2’-‘3’-map-parseInt-what-why"><a href="#‘1’-‘2’-‘3’-map-parseInt-what-why" class="headerlink" title="[‘1’, ‘2’, ‘3’].map(parseInt) what &amp; why ?"></a>[‘1’, ‘2’, ‘3’].map(parseInt) what &amp; why ?</h1>]]></content>
+  </entry>
 </search>
