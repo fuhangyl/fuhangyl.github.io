@@ -3,11 +3,11 @@
   <title>三生有幸的小站</title>
   
   <subtitle>三生有幸的小站</subtitle>
-  <link href="https://github.com/fuhangyl/atom.xml" rel="self"/>
+  <link href="https://github.com/fuhangyl/blog/atom.xml" rel="self"/>
   
-  <link href="https://github.com/fuhangyl/"/>
-  <updated>2024-02-01T06:44:04.806Z</updated>
-  <id>https://github.com/fuhangyl/</id>
+  <link href="https://github.com/fuhangyl/blog/"/>
+  <updated>2024-02-01T06:50:54.847Z</updated>
+  <id>https://github.com/fuhangyl/blog/</id>
   
   <author>
     <name>三生有幸</name>
@@ -18,26 +18,26 @@
   
   <entry>
     <title>Hello Word</title>
-    <link href="https://github.com/fuhangyl/helloword/"/>
-    <id>https://github.com/fuhangyl/helloword/</id>
+    <link href="https://github.com/fuhangyl/blog/helloword/"/>
+    <id>https://github.com/fuhangyl/blog/helloword/</id>
     <published>2019-11-19T02:16:09.000Z</published>
-    <updated>2024-02-01T06:44:04.806Z</updated>
+    <updated>2024-02-01T06:50:54.847Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;欢迎使用H用H用H用H用H用H用H用H用H用H用Hexo。这是系统自动生成的演示文章。编辑或者删除它， </summary>
+    <summary type="html">&lt;p&gt;111欢迎使用H用H用H用H用H用H用H用H用H用H用Hexo。这是系统自动生成的演示文章。编辑或者删除它， </summary>
         
       
     
     
     
-    <category term="创作类" scheme="https://github.com/fuhangyl/categories/%E5%88%9B%E4%BD%9C%E7%B1%BB/"/>
+    <category term="创作类" scheme="https://github.com/fuhangyl/blog/categories/%E5%88%9B%E4%BD%9C%E7%B1%BB/"/>
     
     
-    <category term="hello world" scheme="https://github.com/fuhangyl/tags/hello-world/"/>
+    <category term="hello world" scheme="https://github.com/fuhangyl/blog/tags/hello-world/"/>
     
   </entry>
   
