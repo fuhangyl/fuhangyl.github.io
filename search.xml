@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello Word</title>
-    <url>/helloword/</url>
-    <content><![CDATA[<p>2222欢迎使用H用H用H用H用H用H用H用H用H用H用Hexo。这是系统自动生成的演示文章。编辑或者删除它，  然后开始您的博客！</p>
+    <title>对象数组去重</title>
+    <url>/object-array-deduplication/</url>
+    <content><![CDATA[<p>1111111</p>
 ]]></content>
       <categories>
-        <category>创作类</category>
+        <category>js</category>
       </categories>
-      <tags>
-        <tag>hello world</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>parseint-map</title>
-    <url>/parseint-map/</url>
-    <content><![CDATA[<h1 id="‘1’-‘2’-‘3’-map-parseInt-what-why"><a href="#‘1’-‘2’-‘3’-map-parseInt-what-why" class="headerlink" title="[‘1’, ‘2’, ‘3’].map(parseInt) what &amp; why ?"></a>[‘1’, ‘2’, ‘3’].map(parseInt) what &amp; why ?</h1>]]></content>
   </entry>
 </search>
