@@ -7,21 +7,23 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="这里是三生有幸的小站，记录着一些日常、作品、笔记、小工具。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="三生有幸的小站">
-<meta property="og:url" content="https://fuhangyl.github.io/index.html">
+<meta name="description" content="map、parseInt组合考点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="map、parseInt组合考点">
+<meta property="og:url" content="https://fuhangyl.github.io/map-parseInt/index.html">
 <meta property="og:site_name" content="三生有幸的小站">
-<meta property="og:description" content="这里是三生有幸的小站，记录着一些日常、作品、笔记、小工具。">
+<meta property="og:description" content="map、parseInt组合考点">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-02-19T05:51:31.000Z">
+<meta property="article:modified_time" content="2024-02-19T06:03:00.563Z">
 <meta property="article:author" content="三生有幸">
 <meta property="article:tag" content="三生有幸的小站,三生有幸,前端,网络干货,我的生活,技术博客">
 <meta name="twitter:card" content="summary">
 
-    <meta name="keywords" content="三生有幸的小站,三生有幸,前端,网络干货,我的生活,技术博客">
+    <meta name="keywords" content="map，parseInt，Array.map">
 
 
-<title >三生有幸的小站</title>
+<title >map、parseInt组合考点</title>
 
 <!-- Favicon -->
 
@@ -64,7 +66,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"fuhangyl.github.io","author":"三生有幸","root":"/","typed_text":["Web Developer"],"theme_version":"2.1.8","theme":{"switch":false,"default":"auto"},"favicon":{"logo":"","icon16":"/images/favicon1.png","icon32":"/images/favicon1.png","appleTouchIcon":"/images/favicon1.png","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://npm.elemecdn.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"icon-sun","moon":"icon-moon","play":"icon-yunhang","email":"icon-email","next":"icon-arrow-right","calendar":"icon-rili","clock":"icon-shijian","user":"icon-yonghu","back_top":"icon-backtop","close":"icon-guanbi","search":"icon-chaxun","reward":"icon-qiandai","user_tag":"icon-yonghu1","toc_tag":"icon-liebiao","read":"icon-yuedu","arrows":"icon-arrows-h","double_arrows":"icon-angle-double-down","copy":"icon-copy"},"icontype":"symbol","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"mac","height_limit":200},"toc":{"post_title":true},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"preload":true,"trigger":"auto","path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":true,"postUpdate":"2024-02-19 14:03:09"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-02-19 14:03:00"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.8" id="trm-switch-style">
@@ -146,7 +148,7 @@
     <nav>
         <ul>
             
-            <li class="menu-item-has-children current-menu-item">
+            <li class="menu-item-has-children ">
                 <a  href="/" target="">
                     Home
                 </a>
@@ -175,7 +177,8 @@
             <!-- top bar end -->
 
             <!-- body -->
-            <div class="trm-content-start">
+            
+<div class="trm-content-start">
     <!-- banner -->
     <div class="trm-banner">
     
@@ -199,10 +202,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            Hi my new friend!
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            树深时见鹿，<br>溪午不闻钟。
+                            map、parseInt组合考点
                         </h1>
 
                         
@@ -212,7 +215,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        index.html
+                                        map-parseInt
                                     </span>
                                 </li>
                             </ul>
@@ -333,128 +336,114 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <!-- categories -->
-
-    <div class="row hidden-sm">
-        
-        
-        <div class="col-lg-6">
-            <!-- categories card -->
-<div class="trm-blog-categories trm-scroll-animation">
-    <h6>
-        JavaScript
-        <span class="trm-number">
-            1
-        </span>
-    </h6>
-    <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-    <a href="/categories/JavaScript/." class="trm-label">
-        查看分类 
-        <svg class="symbol-icon arrow-right" aria-hidden="true">
-    <use xlink:href="#icon-arrow-right"></use>
-</svg>
-    </a>
-</div>
-<!-- categories card end -->
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <svg class="symbol-icon trm-icon" aria-hidden="true">
+    <use xlink:href="#icon-rili"></use>
+</svg><br>
+            24/02/19
         </div>
-        
-        <div class="col-lg-6">
-            <!-- categories card -->
-<div class="trm-blog-categories trm-scroll-animation">
-    <h6>
-        JavaScript、面试题
-        <span class="trm-number">
-            1
-        </span>
-    </h6>
-    <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-    <a href="/categories/JavaScript%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98/." class="trm-label">
-        查看分类 
-        <svg class="symbol-icon arrow-right" aria-hidden="true">
-    <use xlink:href="#icon-arrow-right"></use>
-</svg>
-    </a>
-</div>
-<!-- categories card end -->
-        </div>
-        
     </div>
-
-<!-- categories end -->
-
-<!-- newest publications -->
-<div class="row">
-    
-        <div class="col-lg-12">
-            <!-- title -->
-            <h5 class="trm-title-with-divider">
-                最近发布 
-                <span data-number="01"></span>
-            </h5>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <svg class="symbol-icon trm-icon" aria-hidden="true">
+    <use xlink:href="#icon-shijian"></use>
+</svg><br>
+            13:51
         </div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/map-parseInt/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">19</div>
-                    <div class="trm-cover-month">2024/02</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/JavaScript%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                    #JavaScript、面试题
-                </a>
-            </div>
-            <h5>
-                <a href="/map-parseInt/" class="trm-anima-link">
-                    map、parseInt组合考点
-                </a>
-            </h5>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <svg class="symbol-icon trm-icon" aria-hidden="true">
+    <use xlink:href="#icon-yonghu"></use>
+</svg><br>
+            三生有幸
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <p>[‘1’, ‘2’, ‘3’].map(parseInt) what &amp; why ? 这题主要主要考了两个知识点：</p>
+<h3 id="1-Array-map"><a href="#1-Array-map" class="headerlink" title="1. Array.map()"></a>1. Array.map()</h3><p>map方法会接受一个callback函数，callback 函数会被自动传入三个参数：</p>
+<ul>
+<li>currentValue：callback 数组中正在处理的当前元素</li>
+<li>index(可选)：callback 数组中正在处理的当前元素的索引</li>
+<li>thisArg(可选)：执行 callback 函数时使用的 this 值</li>
+</ul>
+<p>map方法最后返回一个经过callback计算后的数组，并且不会修改原数组。<br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map">参考：map | MDN</a></p>
+<h3 id="2-parseInt"><a href="#2-parseInt" class="headerlink" title="2. parseInt()"></a>2. parseInt()</h3><p>parseInt方法接受两个参数：</p>
+<ul>
+<li>string：要被解析的值。如果参数不是一个字符串，则将其转换为字符串(使用  toString 抽象操作)。字符串开头的空白符将会被忽略。</li>
+<li>radix：一个介于2和36之间的整数(数学系统的基础)，表示上述字符串的基数。比如参数”10”表示使用我们通常使用的十进制数值系统。不同的基数会产生不同的结果，当未指定基数或基数为0时，则数字将以 10 为基础来解析。</li>
+</ul>
+<p><strong>注意：</strong> radix参数为n 将会把第一个参数看作是一个数的n进制表示，而返回的值则是十进制的。例如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;123&#x27;</span>, <span class="number">5</span>) <span class="comment">// 将&#x27;123&#x27;看作5进制数，返回十进制数38 =&gt; 1*5^2 + 2*5^1 + 3*5^0 = 38</span></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/parseInt">参考：parseInt | MDN</a></p>
+<p>所以上题其实就是等价于：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;1&#x27;</span>, <span class="number">0</span>)   <span class="comment">// 1       基数为0时，已十进制解析</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;2&#x27;</span>, <span class="number">1</span>)   <span class="comment">// NaN     radi是介于2~36之间的数</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;3&#x27;</span>, <span class="number">2</span>)   <span class="comment">// NaN     2进制数中不会出现3</span></span><br></pre></td></tr></table></figure>
+<p>还可以看看下面这一题：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ <span class="string">&#x27;10&#x27;</span>, <span class="string">&#x27;10&#x27;</span>, <span class="string">&#x27;10&#x27;</span>, <span class="string">&#x27;10&#x27;</span>, <span class="string">&#x27;10&#x27;</span> ].<span class="title function_">map</span>(<span class="built_in">parseInt</span>)</span><br></pre></td></tr></table></figure>
+<p>其实答案已经很明显了：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;10&#x27;</span>, <span class="number">0</span>)     <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;10&#x27;</span>, <span class="number">1</span>)     <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;10&#x27;</span>, <span class="number">2</span>)     <span class="comment">// 2         1*2^1 + 0*2^0</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;10&#x27;</span>, <span class="number">3</span>)     <span class="comment">// 3         1*3^1 + 0*3^0</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;10&#x27;</span>, <span class="number">4</span>)     <span class="comment">// 4         1*4^1 + 0*4^0</span></span><br></pre></td></tr></table></figure>
+<p>有的时候我们还需要注意进制数的规则，比如下面的例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;3&#x27;</span>, <span class="number">2</span>)   </span><br><span class="line"><span class="comment">// NaN   2进制数中是不允许出现大于等于2的数字的</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;5&#x27;</span>, <span class="number">4</span>)   </span><br><span class="line"><span class="comment">// NaN   4进制数中是不允许出现大于等于4的数字的</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">&#x27;124&#x27;</span>, <span class="number">4</span>) </span><br><span class="line"><span class="comment">// 6  4进制数中不允许出现大于等于4的数字，所以&#x27;124&#x27;会被转换为&#x27;12&#x27;，然后&#x27;12&#x27;转换为四进制 1*4^1 + 2*4^0 = 6</span></span><br></pre></td></tr></table></figure>
+
+</article>
+    
+    
+
+<ul class="trm-post-copyright">
+    <li class="trm-post-copyright-author">
+        <strong>本文作者：</strong>
+        三生有幸
+    </li>
+    <li class="trm-post-copyright-link">
+        <strong>本文链接：</strong>
+        <a id="original-link" href="https://fuhangyl.github.io/map-parseInt/" title="map、parseInt组合考点">https://fuhangyl.github.io/map-parseInt/</a>
+    </li>
+    <li class="trm-post-copyright-license">
+        <strong>版权声明：</strong>
+        本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA 4.0</a> 许可协议。
+    </li>
+</ul>
+
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
     
         <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/object-array-deduplication/" class="trm-cover-frame trm-anima-link">
+    <div class="trm-older-publications-card trm-scroll-animation trm-active-el">
+        <div class="trm-older-publication">
             
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">01</div>
-                    <div class="trm-cover-month">2024/02</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/JavaScript/">
-                    #JavaScript
-                </a>
-            </div>
-            <h5>
-                <a href="/object-array-deduplication/" class="trm-anima-link">
-                    对象数组去重
-                </a>
-            </h5>
+            <a class="trm-op-top trm-anima-link" href="/object-array-deduplication/">
+                <span class="trm-op-cover">
+                    <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+                </span>
+                <h6 class="trm-op-title">对象数组去重</h6>
+            </a>
+            <div class="trm-divider trm-mb-15 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/02/01</li>
+                <li>16:07</li>
+                <li>JavaScript</li>
+            </ul>
         </div>
     </div>
 </div>
     
 </div>
-<!-- newest publications end -->
 
+    
 
-    <div class="trm-pagination">
-        <span class="page-number current">1</span>
-    </div>
 
 
                     <div class="trm-divider footer-divider"></div>
@@ -494,10 +483,24 @@
 
             
 
+    <div id="post-toc" class="trm-post-toc">
+      <div class="trm-post-toc-header">
+        目录导航
+				<span id="post-toc-top">
+					置顶
+				</span>
+      </div>
+      <div class="trm-post-toc-content">
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-3" title="1. Array.map()"><a rel="nofollow" class="trm-toc-link" href="#1-Array-map"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">1. Array.map()</span></a></li><li class="trm-toc-item trm-toc-level-3" title="2. parseInt()"><a rel="nofollow" class="trm-toc-link" href="#2-parseInt"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">2. parseInt()</span></a></li></ol>
+      </div>
+    </div>
+
             <div class="trm-fixed-container" data-scroll="data-scroll" data-scroll-sticky="data-scroll-sticky" data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="-10"><div class="trm-fixed-btn" id="trm-search-btn" data-title="查询"><svg class="symbol-icon " aria-hidden="true">
     <use xlink:href="#icon-chaxun"></use>
 </svg></div><div class="trm-fixed-btn" data-title="切换主题模式" onclick="asyncFun.switchThemeMode(document.documentElement.classList.contains('dark')?'style-light':'style-dark');"><svg class="symbol-icon " aria-hidden="true">
     <use xlink:href="#icon-moon"></use>
+</svg></div><div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()"><svg class="symbol-icon " aria-hidden="true">
+    <use xlink:href="#icon-yuedu"></use>
 </svg></div><div class="trm-fixed-btn" id="trm-back-top" data-title="回到顶部"><svg class="symbol-icon " aria-hidden="true">
     <use xlink:href="#icon-backtop"></use>
 </svg></div></div>
@@ -577,6 +580,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 
