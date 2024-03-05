@@ -53,7 +53,7 @@
   </entry>
   <entry>
     <title>使用SASS简化媒体查询</title>
-    <url>/scss-module/</url>
+    <url>/scss-media/</url>
     <content><![CDATA[<p>我们平时开发时，会经常使用媒体查询来设置不同屏幕尺寸下的样式。于是就会下面的代码，不仅麻烦，而且不够直观，维护起来也很麻烦。</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="number">320px</span>) <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">480px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.class1</span> &#123;</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.class2</span> &#123;</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="number">481px</span>) <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">768px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.class1</span> &#123;</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.class2</span> &#123;</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
