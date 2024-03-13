@@ -75,9 +75,9 @@
       </categories>
   </entry>
   <entry>
-    <title>SCSS嵌套</title>
+    <title>SASS嵌套</title>
     <url>/scss-nested/</url>
-    <content><![CDATA[<p>Scss中提供了三种嵌套方式：</p>
+    <content><![CDATA[<p>SASS中提供了三种嵌套方式：</p>
 <ol>
 <li>选择器嵌套</li>
 <li>属性嵌套</li>
@@ -99,6 +99,46 @@
 <p>我们可以使用伪类嵌套来写成：</p>
 <figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  &amp;<span class="selector-pseudo">:before</span>,</span><br><span class="line">  &amp;<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>平时开发中，我们可以合理的应用上述三种嵌套方式，来简化代码书写，提高开发效率。</p>
+]]></content>
+      <categories>
+        <category>SASS</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>SASS循环控制指令</title>
+    <url>/scss-loop/</url>
+    <content><![CDATA[<p>SASS中提供了三种循环控制指令：</p>
+<ol>
+<li>@for</li>
+<li>@while</li>
+<li>@each</li>
+</ol>
+<h4 id="1、-for循环指令"><a href="#1、-for循环指令" class="headerlink" title="1、@for循环指令"></a>1、@for循环指令</h4><p>@for循环指令提供了2种方式：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@for</span> <span class="variable">$i</span> from &lt;start&gt; through &lt;end&gt;</span><br><span class="line"><span class="keyword">@for</span> <span class="variable">$i</span> from &lt;start&gt; to &lt;end&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>$i: 循环变量</li>
+<li>start: 循环起始值 </li>
+<li>end: 循环结束值</li>
+</ul>
+<p>上面两种方式的区别是，关键字 through 表示<strong>包括</strong> end 这个值，而 to 则<strong>不包括</strong> end 这个值，看看下面这个例子：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// through 方式</span></span><br><span class="line"><span class="keyword">@for</span> <span class="variable">$i</span> from <span class="number">1</span> through <span class="number">3</span> &#123;</span><br><span class="line">  <span class="selector-class">.item-</span>#&#123;<span class="variable">$i</span>&#125; &#123; </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span> * <span class="variable">$i</span>; </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// to 方式</span></span><br><span class="line"><span class="keyword">@for</span> <span class="variable">$i</span> from <span class="number">1</span> to <span class="number">3</span> &#123;</span><br><span class="line">  <span class="selector-class">.item-</span>#&#123;<span class="variable">$i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span> * <span class="variable">$i</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对应的css样式代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* through 方式 */</span></span><br><span class="line"><span class="selector-class">.item-1</span> &#123; <span class="attribute">width</span>: <span class="number">100px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item-2</span> &#123; <span class="attribute">width</span>: <span class="number">200px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item-3</span> &#123; <span class="attribute">width</span>: <span class="number">300px</span>; &#125;</span><br><span class="line"><span class="comment">/* to 方式 */</span></span><br><span class="line"><span class="selector-class">.item-1</span> &#123; <span class="attribute">width</span>: <span class="number">100px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item-2</span> &#123; <span class="attribute">width</span>: <span class="number">200px</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、-while循环指令"><a href="#2、-while循环指令" class="headerlink" title="2、@while循环指令"></a>2、@while循环指令</h4><p>@while指令，只要后面的条件为true，则一直执行循环体，只到条件为false时，停止循环。</p>
+<p>下面是@while指令的一个简单的应用：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$i</span>: <span class="number">4</span>;</span><br><span class="line"><span class="keyword">@while</span> <span class="variable">$i</span> &gt; <span class="number">0</span> &#123;</span><br><span class="line">  <span class="selector-class">.item-</span>#&#123;<span class="variable">$i</span>&#125; &#123; </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span> * <span class="variable">$i</span>; </span><br><span class="line">  &#125;</span><br><span class="line">  <span class="variable">$i</span>: <span class="variable">$i</span> - <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对应的css样式代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.item-1</span> &#123; <span class="attribute">width</span>: <span class="number">400px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item-2</span> &#123; <span class="attribute">width</span>: <span class="number">300px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item-3</span> &#123; <span class="attribute">width</span>: <span class="number">200px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item-3</span> &#123; <span class="attribute">width</span>: <span class="number">100px</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、-each循环指令"><a href="#3、-each循环指令" class="headerlink" title="3、@each循环指令"></a>3、@each循环指令</h4><p>@each指令和其它两种指令不同的是，@each不是基于变量循环的，而是基于列表循环。</p>
+<p>@each 循环指令的形式：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@each</span> <span class="variable">$var</span> in &lt;list&gt;</span><br></pre></td></tr></table></figure>
+<p>上面的list就是一个列表</p>
+<p>具体可看下面这个实例：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$list</span>: margin padding;</span><br><span class="line"><span class="keyword">@each</span> <span class="variable">$item</span> in <span class="variable">$list</span> &#123;</span><br><span class="line">  <span class="selector-class">.item</span> &#123;</span><br><span class="line">    #&#123;<span class="variable">$item</span>&#125;: <span class="number">10px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
 ]]></content>
       <categories>
         <category>SASS</category>
