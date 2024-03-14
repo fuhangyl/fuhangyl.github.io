@@ -144,4 +144,13 @@
         <category>SASS</category>
       </categories>
   </entry>
+  <entry>
+    <title>CSS-文字穿透效果</title>
+    <url>/text-penetration/</url>
+    <content><![CDATA[<p><img src="/../images/text_penetration/01.png" alt="CSS-文字穿透效果" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+  </entry>
 </search>
