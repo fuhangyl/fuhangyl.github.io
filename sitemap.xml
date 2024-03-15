@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fuhangyl.github.io/about/index.html</loc>
+    
+    <lastmod>2024-03-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fuhangyl.github.io/text-penetration/</loc>
     
     <lastmod>2024-03-14</lastmod>
@@ -56,6 +65,33 @@
   </url>
   
   <url>
+    <loc>https://fuhangyl.github.io/sketch/index.html</loc>
+    
+    <lastmod>2024-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fuhangyl.github.io/tags/index.html</loc>
+    
+    <lastmod>2024-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fuhangyl.github.io/categories/index.html</loc>
+    
+    <lastmod>2024-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fuhangyl.github.io/404.html</loc>
     
     <lastmod>2024-02-01</lastmod>
@@ -74,52 +110,7 @@
   </url>
   
   <url>
-    <loc>https://fuhangyl.github.io/tags/index.html</loc>
-    
-    <lastmod>2024-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fuhangyl.github.io/sketch/index.html</loc>
-    
-    <lastmod>2024-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://fuhangyl.github.io/links/index.html</loc>
-    
-    <lastmod>2024-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fuhangyl.github.io/categories/index.html</loc>
-    
-    <lastmod>2024-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fuhangyl.github.io/about/index.html</loc>
-    
-    <lastmod>2024-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fuhangyl.github.io/flex.html</loc>
     
     <lastmod>2024-01-29</lastmod>
     
@@ -130,7 +121,7 @@
 
   <url>
     <loc>https://fuhangyl.github.io/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -140,35 +131,35 @@
   
   <url>
     <loc>https://fuhangyl.github.io/categories/JavaScript/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fuhangyl.github.io/categories/JavaScript%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fuhangyl.github.io/categories/SASS/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fuhangyl.github.io/categories/CSS/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fuhangyl.github.io/categories/%E7%89%B9%E6%95%88/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
