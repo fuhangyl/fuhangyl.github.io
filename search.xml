@@ -84,15 +84,15 @@
 
 <p>为了时Maps数据类型更加灵活，SASS还提供了Maps函数，允许我们动态地创建、修改和操作Maps。在SASS中Maps自身带了七个函数：</p>
 <ol>
-<li>**map-get($map,$key)**：根据给定的key值，返回Maps中相关的值</li>
-<li>**map-merge($map1,$map2)**：将两个Maps合并成一个新的Maps</li>
-<li>**map-remove($map,$key)**：从Maps中删除一个key，返回一个新Maps</li>
-<li>**map-keys($map)**：返回Maps中所有的key</li>
-<li>**map-values($map)**：返回Maps中所有的value</li>
-<li>**map-has-key($map,$key)**：根据给定的key值判断Maps是否有对应的value值，如果有返回true，否则返回false</li>
-<li>**keywords($args)**：返回一个函数的参数，这个参数可以动态的设置key和value</li>
+<li><strong>map-get($map,$key)</strong> ：根据给定的key值，返回Maps中相关的值</li>
+<li><strong>map-merge($map1,$map2)</strong> ：将两个Maps合并成一个新的Maps</li>
+<li><strong>map-remove($map,$key)</strong> ：从Maps中删除一个key，返回一个新Maps</li>
+<li><strong>map-keys($map)</strong> ：返回Maps中所有的key</li>
+<li><strong>map-values($map)</strong> ：返回Maps中所有的value</li>
+<li><strong>map-has-key($map,$key)</strong> ：根据给定的key值判断Maps是否有对应的value值，如果有返回true，否则返回false</li>
+<li><strong>keywords($args)</strong> ：返回一个函数的参数，这个参数可以动态的设置key和value</li>
 </ol>
-]]></content>
+<h4 id="2、map-get-map-key-函数"><a href="#2、map-get-map-key-函数" class="headerlink" title="2、map-get($map,$key)函数"></a>2、map-get($map,$key)函数</h4>]]></content>
       <categories>
         <category>SASS</category>
       </categories>
