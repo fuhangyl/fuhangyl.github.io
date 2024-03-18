@@ -76,7 +76,23 @@
   <entry>
     <title>SASS Maps函数</title>
     <url>/sass-maps/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h4 id="1、Maps数据类型"><a href="#1、Maps数据类型" class="headerlink" title="1、Maps数据类型"></a>1、Maps数据类型</h4><p>了解SASS中的Maps函数之前，我们首先要学习SASS中的Maps数据类型。</p>
+<p>SASS Maps是一种类似于JavaScript对象的数据类型，它允许我们存储和操作键值对。</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$map</span>: (</span><br><span class="line">  key1: value1, </span><br><span class="line">  key2: value2</span><br><span class="line">)</span><br><span class="line">// Maps也是可以嵌套的</span><br><span class="line"><span class="variable">$map1</span>: (</span><br><span class="line">  key1: value1,</span><br><span class="line">  key2: (</span><br><span class="line">    key2_1: value2_1,</span><br><span class="line">    key2_2: value2_2      </span><br><span class="line">  ),</span><br><span class="line">  key3: value3      </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>Maps的嵌套在平时的开发中实用性还是比较高的，比如平时做后台管理系统时，会经常涉及到换肤功能：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$theme</span>: (</span><br><span class="line">  // 默认主题</span><br><span class="line">  default: (</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  ),</span><br><span class="line">  // 暗黑主题</span><br><span class="line">  dark: (</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  )      </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>为了时Maps数据类型更加灵活，SASS还提供了Maps函数，允许我们动态地创建、修改和操作Maps。在SASS中Maps自身带了七个函数：</p>
+<ol>
+<li>**map-get($map,$key)**：根据给定的key值，返回Maps中相关的值</li>
+<li>**map-merge($map1,$map2)**：将两个Maps合并成一个新的Maps</li>
+<li>**map-remove($map,$key)**：从Maps中删除一个key，返回一个新Maps</li>
+<li>**map-keys($map)**：返回Maps中所有的key</li>
+<li>**map-values($map)**：返回Maps中所有的value</li>
+<li>**map-has-key($map,$key)**：根据给定的key值判断Maps是否有对应的value值，如果有返回true，否则返回false</li>
+<li>**keywords($args)**：返回一个函数的参数，这个参数可以动态的设置key和value</li>
+</ol>
+]]></content>
       <categories>
         <category>SASS</category>
       </categories>
