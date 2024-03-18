@@ -82,7 +82,7 @@
 <p>Maps的嵌套在平时的开发中实用性还是比较高的，比如平时做后台管理系统时，会经常涉及到换肤功能：</p>
 <figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$theme</span>: (</span><br><span class="line">  // 默认主题</span><br><span class="line">  default: (</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  ),</span><br><span class="line">  // 暗黑主题</span><br><span class="line">  dark: (</span><br><span class="line">    <span class="comment">/* styles */</span></span><br><span class="line">  )      </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-<p>为了时Maps数据类型更加灵活，SASS还提供了Maps函数，允许我们动态地创建、修改和操作Maps。在SASS中Maps自身带了七个函数：</p>
+<p>为了使Maps数据类型更加灵活，SASS还提供了Maps函数，允许我们动态地创建、修改和操作Maps。在SASS中Maps自身带了七个函数：</p>
 <ol>
 <li><strong>map-get($map,$key)</strong> ：根据给定的key值，返回Maps中相关的值</li>
 <li><strong>map-merge($map1,$map2)</strong> ：将两个Maps合并成一个新的Maps</li>
@@ -92,7 +92,25 @@
 <li><strong>map-has-key($map,$key)</strong> ：根据给定的key值判断Maps是否有对应的value值，如果有返回true，否则返回false</li>
 <li><strong>keywords($args)</strong> ：返回一个函数的参数，这个参数可以动态的设置key和value</li>
 </ol>
-<h4 id="2、map-get-map-key-函数"><a href="#2、map-get-map-key-函数" class="headerlink" title="2、map-get($map,$key)函数"></a>2、map-get($map,$key)函数</h4>]]></content>
+<h4 id="2、map-get-map-key-函数"><a href="#2、map-get-map-key-函数" class="headerlink" title="2、map-get($map,$key)函数"></a>2、map-get($map,$key)函数</h4><p>map-get函数可以根据给定的$key的值，返回$map中对应的value值，如果$map中没有对应的$key，则返回null。函数包含两个参数：</p>
+<ul>
+<li>$map:  定义的Maps数据</li>
+<li>$key:  需要遍历的key值</li>
+</ul>
+<p>下面我们来看看map-get函数的用法：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$fonts</span>: (</span><br><span class="line">  default: <span class="number">16px</span>,</span><br><span class="line">  small: <span class="number">14px</span>,</span><br><span class="line">  large: <span class="number">18px</span>      </span><br><span class="line">)</span><br><span class="line">.font-default &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="built_in">map-get</span>(<span class="variable">$fonts</span>, default);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.font-small</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="built_in">map-get</span>(<span class="variable">$fonts</span>, small);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.font-large</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="built_in">map-get</span>(<span class="variable">$fonts</span>, large);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// $fonts中并没有custom对应的value值，最后会返回null</span></span><br><span class="line"><span class="selector-class">.font-custom</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="built_in">map-get</span>(<span class="variable">$fonts</span>, custom);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译后的CSS代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.font-default</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.font-small</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.font-large</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从编译后的css代码中可以发现，当$fonts中没有custom对应的value值时，会返回null，同时也不会编译在css代码中。</p>
+<p><a href="https://fuhangyl.github.io/sass-media">map-get案例传送门</a></p>
+<h4 id="3、map-merge-map1-map2-函数"><a href="#3、map-merge-map1-map2-函数" class="headerlink" title="3、map-merge($map1,$map2)函数"></a>3、map-merge($map1,$map2)函数</h4><p>map-merge函数可以将两个Maps合并成一个新的Maps，如果两个Maps中有相同的key，则后面的会覆盖前面的。</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$map1</span>: (</span><br><span class="line">  color: red,</span><br><span class="line">  font-size: <span class="number">24px</span>,</span><br><span class="line">  background: <span class="number">#ffffff</span>      </span><br><span class="line">)</span><br><span class="line"><span class="variable">$map2</span>: (</span><br><span class="line">  line-height: <span class="number">1.5</span>, </span><br><span class="line">  font-weight: bold,</span><br><span class="line">  background: <span class="number">#000000</span>      </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>如果我们想将$map1和$map2合并成一个新的Maps，可以使用map-merge函数：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$map3</span>: <span class="built_in">map-merge</span>(<span class="variable">$map1</span>, <span class="variable">$map2</span>)</span><br></pre></td></tr></table></figure>
+<p>我们将得到一个新的Maps：</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$map3</span>: (</span><br><span class="line">  color: red,</span><br><span class="line">  font-size: <span class="number">24px</span>,</span><br><span class="line">  // 后面的<span class="built_in">Maps</span>(<span class="variable">$map2</span>)会覆盖前面的<span class="built_in">Maps</span>(<span class="variable">$map1</span>)    </span><br><span class="line">  background: <span class="number">#000000</span>,</span><br><span class="line">  line-height: <span class="number">1.5</span>,</span><br><span class="line">  font-weight: bold,      </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、map-remove-map-key-函数"><a href="#4、map-remove-map-key-函数" class="headerlink" title="4、map-remove($map,$key)函数"></a>4、map-remove($map,$key)函数</h4>]]></content>
       <categories>
         <category>SASS</category>
       </categories>
