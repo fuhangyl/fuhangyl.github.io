@@ -6,7 +6,7 @@
   <link href="https://fuhangyl.github.io/atom.xml" rel="self"/>
   
   <link href="https://fuhangyl.github.io/"/>
-  <updated>2024-03-14T06:38:14.349Z</updated>
+  <updated>2024-03-18T07:47:12.200Z</updated>
   <id>https://fuhangyl.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SASS Maps函数</title>
+    <link href="https://fuhangyl.github.io/sass-maps/"/>
+    <id>https://fuhangyl.github.io/sass-maps/</id>
+    <published>2024-03-18T07:38:21.000Z</published>
+    <updated>2024-03-18T07:47:12.200Z</updated>
+    
+    
+    <summary type="html">SASS Maps函数</summary>
+    
+    
+    
+    <category term="SASS" scheme="https://fuhangyl.github.io/categories/SASS/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>CSS-文字穿透效果</title>
@@ -35,8 +52,8 @@
   
   <entry>
     <title>SASS循环控制指令</title>
-    <link href="https://fuhangyl.github.io/scss-loop/"/>
-    <id>https://fuhangyl.github.io/scss-loop/</id>
+    <link href="https://fuhangyl.github.io/sass-loop/"/>
+    <id>https://fuhangyl.github.io/sass-loop/</id>
     <published>2024-03-13T03:19:07.000Z</published>
     <updated>2024-03-13T05:42:07.424Z</updated>
     
@@ -52,8 +69,8 @@
   
   <entry>
     <title>SASS嵌套</title>
-    <link href="https://fuhangyl.github.io/scss-nested/"/>
-    <id>https://fuhangyl.github.io/scss-nested/</id>
+    <link href="https://fuhangyl.github.io/sass-nested/"/>
+    <id>https://fuhangyl.github.io/sass-nested/</id>
     <published>2024-03-05T09:45:54.000Z</published>
     <updated>2024-03-13T03:23:27.745Z</updated>
     
@@ -69,8 +86,8 @@
   
   <entry>
     <title>使用SASS简化媒体查询</title>
-    <link href="https://fuhangyl.github.io/scss-media/"/>
-    <id>https://fuhangyl.github.io/scss-media/</id>
+    <link href="https://fuhangyl.github.io/sass-media/"/>
+    <id>https://fuhangyl.github.io/sass-media/</id>
     <published>2024-02-22T09:23:08.000Z</published>
     <updated>2024-03-05T08:12:47.505Z</updated>
     
